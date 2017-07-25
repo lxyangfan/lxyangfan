@@ -33,7 +33,7 @@ tages:
 
 我再说一个我自己的理解：
 
-![CAS 单点登录原理](./SSO-process.png)
+![CAS 单点登录原理](http://7xsyqy.com2.z0.glb.clouddn.com/-SSO-process.png)
 
 
 ---
