@@ -24,3 +24,5 @@ branches:
 env:
  global:
    - GH_REF: github.com/lxyangfan/lxyangfan.github.io.git
+
+fqdn: www.fr4nk.cn
