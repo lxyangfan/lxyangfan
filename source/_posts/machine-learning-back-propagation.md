@@ -21,7 +21,7 @@ tages:
 
 模型如下图所示：
 
-![](https://raw.githubusercontent.com/lxyangfan/lxyangfan.github.io/hexo/source/uploads/nn.png)
+<img src="https://raw.githubusercontent.com/lxyangfan/lxyangfan.github.io/hexo/source/uploads/nn.png" width = "450" height = "200" alt="图片名称" align=center />
 
 ### 神经网络模型
 
