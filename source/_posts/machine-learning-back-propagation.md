@@ -17,7 +17,11 @@ tages:
 - n 个输入\\(x_1...x_n\\)
 - n 个输入的权重\\(w_{ij}, i=1...n\\)
 - 神经元的阈值 \\(\theta_j\\) 
-- 神经元输出 \\(o_{j}=\sum_{i=1} ^ {n} w_{ij}*x_i - \theta_j \\)
+- 神经元输出 \\(o_{j}=\sum_{i=1} ^ {n} w_{ij}*x_i - \theta_j\\)
+
+模型如下图所示：
+
+![](https://raw.githubusercontent.com/lxyangfan/lxyangfan.github.io/hexo/source/uploads/nn.png)
 
 ### 神经网络模型
 
