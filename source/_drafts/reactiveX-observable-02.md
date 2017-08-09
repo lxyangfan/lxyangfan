@@ -68,8 +68,12 @@ export class TodoComponent implements  {
 - 
 
 
+## 单向数据流
+
+<img src="https://docs.google.com/drawings/d/1UMNTBHz_XXJtDAon1QmC5Y5JfXTtS1j8wDW6u2fAvlg/pub?w=1002&amp;h=600">
+
 ## 参考资料
 
-[Angular2: Select a state management strategy](https://bertrandg.github.io/angular2-application-state-management-strategy/)
-[Reactive Data Flow in Angular 2](https://lambda-it.ch/blog/post/reactive-data-flow-in-angular-2)
-[Angular/RxJs When should I unsubscribe from `Subscription`](https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription)
+[Angular2: Select a state management strategy](https://bertrandg.github.io/angular2-application-state-management-strategy/)  
+[Reactive Data Flow in Angular 2](https://lambda-it.ch/blog/post/reactive-data-flow-in-angular-2)  
+[Angular/RxJs When should I unsubscribe from `Subscription`](https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription) 
