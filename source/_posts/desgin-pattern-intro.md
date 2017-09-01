@@ -86,9 +86,13 @@ tags:
 
 ## 简单工厂模式和工厂方法模式
 
-![简单工厂模式]()
+![简单工厂模式](https://raw.githubusercontent.com/lxyangfan/lxyangfan.github.io/hexo/source/uploads/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.png)
 
-![工厂方法模式]()
+![工厂方法模式](https://raw.githubusercontent.com/lxyangfan/lxyangfan.github.io/hexo/source/uploads/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.png)
+
+## 参考
+
+[设计模式总结](http://blog.csdn.net/yangzl2008/article/details/7727084)
 
 
 
