@@ -1,4 +1,7 @@
-## maven安装 Oracle Jdbc Driver失败
+title: maven安装 Oracle Jdbc Driver失败
+date: 2017-10-20
+----
+
 
 在工程中，按如下方式加入引用：
 
