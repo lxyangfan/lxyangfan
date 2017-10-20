@@ -1,0 +1,18 @@
+title: JAVA collections 之 HashMap
+tags:
+- JAVA
+- collections
+- HashMap
+-----
+
+## 关于HashMap的几个问题
+
+话不多说，首先上几个问题：
+
+- 简单介绍HashMap，有什么特点？
+- HashMap 内部实现原理？
+- HashMap中 HashCode() 和 hash() 分别什么用？
+- HashMap中如果达到了LoadFactor对应的容量大小会怎样？
+- HashMap中 hash如何实现，有什么好处？
+
+## 
