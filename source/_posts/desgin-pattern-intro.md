@@ -1,4 +1,5 @@
 title: 设计模式介绍、简单工厂模式、工厂方法模式
+date: 2017-11-1
 tags:
 - Design Pattern
 - 设计模式
