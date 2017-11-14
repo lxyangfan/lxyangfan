@@ -8,7 +8,7 @@ tags:
 
 ### 条件概率和贝叶斯定理
 
-条件概率：定义在事件A发生的条件下发生事件B的概率，记为$P(A|B)$。
+条件概率：定义在事件A发生的条件下发生事件B的概率，记为$P(A|B)$，$P(A|B)$称为事件A的后验概率。
 
 贝叶斯定理：
 
@@ -20,10 +20,39 @@ $$P(A|B) = \frac{P(AB)}{P(B)} \tag{1.1} $$
 
 $$P(Y_i|X) = \frac{P(XY_i)}{P(X)} = \frac{P(Y_i)P(X|Y_i)}{P(X)} \tag{1.2}$$
 
-这个推论是使用朴素贝叶斯分类的理论依据：
+#### 后验概率$P(Y=c_i|\bf X) $最大意味着预期损失 $R_{exp}$ 最小
 
-这里，设$X$为特征数据，$Y\_i$为预测结果（如分类的结果）。$P(Y\_i|X)$表示在特征数据为$X$的条件下，分类结果为$Y_i$的概率。为此，我们只需得到这样的$Y\_i$作为分类的结果，使得：
-$$\arg \max_{Y_i} P(Y_i|X) \tag{1.3}$$
+推论${1.2}$是使用朴素贝叶斯分类的理论依据：
+
+这里，设 $\bf X=\\{\rm X_{1},..., \rm X_{n}\\}$ 为 $n$ 个训练数据，每条训练数据 $\rm X_{i}$ 包括 $m$ 个特征， $\rm X_{i} = \\{x_{i}^{1},...,x_{i}^{m}\\}$。$Y=c_i$为预测结果（如分类的结果）。$P(Y=c_i|\bf X)$表示在训练数据为 $\bf X$ 的条件下，分类结果为 $c_i$ 的概率。
+
+为此，我们只需得到这样的 $c\_i$ 作为分类的结果，使得：
+$$\arg \max_{c_i} P(Y=c_i|X) \tag{1.3}$$
+
+我们的策略是最小化预期损失$R_{exp}(f(\bf X))$，定义$0-1$损失函数：
+$$L(y, f(\bf X)) = 
+\left \\\{
+\begin{align}
+1 & , y = f(\bf X)\\\\
+0 & , y \ne f(\bf X)
+\end{align}
+\right.
+\tag{1.4}
+$$
+
+数学期望$R_{exp}(f(\bf X))$是对联合概率分布 $P(\bf X, Y)$取的，
+$$
+\begin{align}
+& \arg \min_{c_i} R_{exp}(f(\bf X)) \\\\
+ & = \arg \min_{c_i} \sum_{i=1}^{n} \sum_{j=1}^{k} P(c_j, \rm X_i)L(c_j, f(\rm X_i)) \\\\
+& = \arg \min_{c_i} \sum_{i=1}^{n} \sum_{j=1}^{k} P(y \ne c_j, \rm X_i), \it y = f(\rm X_i) \ne c_j \\\\
+& = \arg \min_{c_i} \sum_{i=1}^{n} \sum_{j=1}^{k} (1 - P(y = c_j, \rm X_i) ) \\\\
+& = \arg \max_{c_i} \sum_{i=1}^{n} \sum_{j=1}^{k} P(y = c_j, \rm X_i)  \\\\
+& = \arg \max_{c_i} \sum_{i=1}^{n} \sum_{j=1}^{k} P(c_j | \rm X_i) P(\rm X_i) \\\\
+& = \arg \max_{c_i} P(c_j | \bf X) \\\\
+\end{align}$$
+
+因此最大化后验概率就是最小化预期损失。
 
 ### 朴素贝叶斯分类
 
