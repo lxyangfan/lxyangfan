@@ -46,7 +46,7 @@ $$
 
 对于分类问题，先定义似然函数$L(W)$如下：
 $$
-\arg \max_{W}L(W) = \arg P(Y|X;W) = \prod_{i=1}^{n} P(y_i|x_i;W)  \tag{3.2}
+\arg \max\_{W}L(W) = \arg P(Y|X;W) = \prod\_{i=1}^{n} P(y\_i|x\_i;W)  \tag{3.2}
 $$
 
 对于单个样本的后验概率$P(y_i|x_i;W)$，结合$2.1,2.2$,得：
