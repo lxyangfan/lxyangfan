@@ -22,7 +22,7 @@ tag:
 
 根据上述规则得出的决策树：
 
-<img src="/assets/img/20171129/tree1.png" />
+<img src="/assets/20171129/tree1.png" />
 
 中间节点都是特征，分类结果是叶子节点。
 
