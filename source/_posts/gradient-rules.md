@@ -79,7 +79,7 @@ $$
 $$
 \nabla a^T \bf  x  =  \it a, \nabla a \bf x  =  \it a^T,  \nabla a f(\bf x)  =  \frac{\partial  \it f(\bf x)^T}{\partial \bf x} \it a^T, 
 $$
-- $$
+- 假设$\it A$是与$\bf x$无关的方阵，那么  $$
 \nabla \left ( \it f(\bf x)^T A \it f(\bf x) \right) = \frac{\partial \it f(\bf x)^T}{\partial  \bf x} (A+A^T) f(\bf x)
 $$
 - 其他还有乘法法则、链式法则等等请见参考资料
