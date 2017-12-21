@@ -55,15 +55,40 @@ $$
 ## 梯度计算方法
 
 首先给出几个特殊例子：
-
+- 假设$A$与向量$\bf x$无关，$A\bf x$ 是一个标量函数,$A \bf x = (A \bf x)^T = x^TA^T$，那么：
+$$
+\nabla A \bf x  =  \frac{\partial A \bf x }{\partial \bf x} =  \frac{\partial \bf x^{T}A^T}{\partial \bf x}  = A ^T
+$$
+- 假设$A\bf y$与向量$\bf x$无关，则
 $$
 \nabla f(\bf x^T A \bf y) =  \frac{\partial \bf x^{T}}{\partial \bf x} A \bf y = A \bf y
 $$
+- 假设$A$是与向量$\bf x = [x\_1,x\_2,...,x\_n]^T$无关的方阵$A=[a\_1,a\_2,...,a\_n]$，$\bf xA\bf x$ 是一个标量函数$\bf xA\bf x = \sum\_i^n \sum\_j^n (x\_i a\_{ij} x\_j)$，那么 $\nabla (\frac{\bf x^T A \bf x} {\bf x})$列向量的第k个分量：
+$$
+\begin{align}
+\left [\nabla  \left (\frac{\bf x^T A \bf x} {x\_k} \right) \right]\_k = & \sum\_j^n ( a\_{kj} x\_j) + \sum\_i^n ( a\_{ik} x\_i) \\\\
+= & \sum\_j^n ( a\_{kj}) \bf x + \sum\_i^n (a\_{ik} ) \bf x 
+\end{align} 
+$$ 所以，完整得到： $$
+\nabla  \left (\frac{\bf x^T A \bf x} {\bf x} \right) = A \bf x+ A^T \bf x = (A+A^T)\bf x
+$$
+
+由上，可以归纳出如下的求梯度的法则：
+
+- 假设向量$a$与向量$\bf x$无关的常数向量，那么：
+$$
+\nabla a^T \bf  x  =  \it a, \nabla a \bf x  =  \it a^T,  \nabla a f(\bf x)  =  \frac{\partial  \it f(\bf x)^T}{\partial \bf x} \it a^T, 
+$$
+- $$
+\nabla \left ( \it f(\bf x)^T A \it f(\bf x) \right) = \frac{\partial \it f(\bf x)^T}{\partial  \bf x} (A+A^T) f(\bf x)
+$$
+- 其他还有乘法法则、链式法则等等请见参考资料
 
 ## 参考
 
 [http://www.voidcn.com/article/p-ponrkmdt-xd.html](http://www.voidcn.com/article/p-ponrkmdt-xd.html)
 
+[矩阵分析与应用].张贤达.2004
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
