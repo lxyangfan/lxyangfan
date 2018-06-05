@@ -27,8 +27,8 @@ Buffer 有3个重要的参数：
 - limit
 
 其中position和limit参数，在读操作和写操作上是有不同的含义：
-- 读操作：limit表示Buffer能从Channel读的最大的下标，值为 capacity-1, position表示当前读的下标；
-- 写操作：limit表示当前Buffer能写到Channel的最大下标，position表示正在写出的下标初始化为0；
+- 写模式：limit表示Buffer能从Channel获取数据并写入的最大的下标，值为 capacity-1, position表示当前写入的下标；
+- 读模式：limit表示当前能读取到Buffer的最大下标，position表示正在读出的下标初始化为0；
 
 <img src="http://tutorials.jenkov.com/images/java-nio/buffers-modes.png"  style="width:60%;display: block;margin-left: auto;margin-right: auto" />
 
