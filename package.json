@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.4.0"
+    "version": "3.9.0"
   },
   "scripts": {
     "help": "hexo -h",
     "gen": "hexo generate",
     "cls": "hexo clean",
-    "run": "http-server public -p 8091 -o"
+    "run": "http-server public -p 18091 -o"
   },
   "dependencies": {
     "hexo": "^3.2.0",
