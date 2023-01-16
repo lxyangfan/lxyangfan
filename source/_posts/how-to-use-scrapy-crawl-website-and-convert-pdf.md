@@ -216,4 +216,4 @@ class HiddenDataLoginSpider(Spider):
 ```
 
 # 总结
-通过 Scrapy 获取需要爬取的网页地址，和登录状态后，就可以结合中 generate_pdf 方法就可以将网页生成PDF.
+通过 Scrapy 获取需要爬取的网页地址，和登录状态后，就可以结合中 generate_pdf 方法就可以将网页生成PDF。
