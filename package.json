@@ -8,6 +8,7 @@
   "scripts": {
     "help": "hexo -h",
     "gen": "hexo generate",
+    "build": "hexo generate",
     "cls": "hexo clean",
     "run": "http-server public -p 18091 -o"
   },
